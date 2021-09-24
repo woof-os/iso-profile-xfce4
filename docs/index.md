@@ -1,5 +1,8 @@
-# iso-profile
-# ISO profile for Woof OS
+---
+layout: default
+---
+
+# ISO profiles for Woof OS
 ISO profile for building Woof OS using [`archiso`](https://wiki.archlinux.org/title/Archiso)
 
 ## Building the ISO profile into an ISO
