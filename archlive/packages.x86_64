@@ -1,7 +1,6 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
-archinstall
 b43-fwcutter
 base
 bind-tools
@@ -83,7 +82,6 @@ ppp
 pptpclient
 pv
 qemu-guest-agent
-reflector
 reiserfsprogs
 rp-pppoe
 rsync
@@ -142,6 +140,5 @@ sudo
 wget
 htop
 noto-fonts
-ttf-nerd-fonts-symbols-mono
 ttf-nerd-fonts-symbols
 cantarell-fonts
