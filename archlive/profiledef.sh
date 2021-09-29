@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
-iso_label="ARCH_$(date +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_name="woof-os"
+iso_label="WOOF_OS_$(date +%Y%m)"
+iso_publisher="Woof Os <https://woof-os.github.io>"
+iso_application="Woof OS installation/live CD"
 iso_version="$(date +%Y.%m.%d)"
-install_dir="arch"
+install_dir="woof"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"

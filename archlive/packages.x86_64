@@ -142,4 +142,7 @@ fakeroot
 sudo
 wget
 htop
-
+noto-fonts
+nerd-fonts-jetbrains-mono
+cantarell-fonts
+yay
