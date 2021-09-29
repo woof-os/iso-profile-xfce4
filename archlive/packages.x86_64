@@ -133,7 +133,6 @@ lightdm
 binutils
 base-devel
 xorg
-xorg-xinit
 flameshot
 firefox
 plank
