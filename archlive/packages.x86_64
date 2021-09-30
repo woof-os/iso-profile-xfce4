@@ -94,7 +94,7 @@ sof-firmware
 squashfs-tools
 sudo
 syslinux
-systemd-boot
+grub
 systemd-resolvconf
 tcpdump
 terminus-font
