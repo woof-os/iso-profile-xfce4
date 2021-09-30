@@ -3,7 +3,7 @@
 
 iso_name="woof-os"
 iso_label="WOOF_OS_$(date +%Y%m)"
-iso_publisher="Woof Os <https://woof-os.github.io>"
+iso_publisher="Woof OS <https://woof-os.github.io>"
 iso_application="Woof OS installation/live CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="woof"

@@ -94,6 +94,7 @@ sof-firmware
 squashfs-tools
 sudo
 syslinux
+systemd-boot
 systemd-resolvconf
 tcpdump
 terminus-font
@@ -131,6 +132,7 @@ lightdm
 binutils
 base-devel
 xorg
+xorg-xinit
 flameshot
 firefox
 plank
