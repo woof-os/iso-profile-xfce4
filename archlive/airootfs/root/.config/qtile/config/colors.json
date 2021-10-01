@@ -1,0 +1,19 @@
+{
+  "bg": "#1a1b26",
+  "fg": "#a9b1d6",
+  "active": "#9ece6a",
+  "inactive": "#acb0d0",
+  "border_focus": "#9a7ecc",
+  "border_normal": "#1a1b26",
+  "groups_bg": "#1a1b26",
+  "current_screen_tab": "#9ece6a",
+  "systray": "#1a1b26",
+  "color2fg": "#7aa2f7",
+  "color2": "#1a1b26",
+  "color1fg": "#9a7ecc",
+  "color1": "#1a1b26",
+  "color3fg": "#e0af68",
+  "color3": "#1a1b26",
+  "color4fg": "#9ece6a",
+  "color4": "#1a1b26"
+}
