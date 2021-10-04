@@ -130,6 +130,8 @@ woof-fetch-walls
 woof-plank-themes
 woofetch
 lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 binutils
 base-devel
 xorg
