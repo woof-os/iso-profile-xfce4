@@ -123,6 +123,7 @@ woof-conky-config
 woof-gtk-config
 gtk3
 gtk2
+lxappearance
 woof-rofi-config
 woof-dunst-config
 woof-kitty-config
