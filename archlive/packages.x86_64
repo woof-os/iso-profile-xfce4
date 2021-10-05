@@ -138,6 +138,7 @@ lightdm-gtk-greeter-settings
 binutils
 base-devel
 xorg
+xwallpaper
 xorg-xinit
 flameshot
 firefox
