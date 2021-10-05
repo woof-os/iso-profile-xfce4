@@ -354,6 +354,7 @@ floating_layout = layout.Floating(
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser("~")
+    subprocess.Popen(["calamares"])
     subprocess.call([home + "/.config/qtile/autostart.sh"])
     subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "start"])
     subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "show"])
