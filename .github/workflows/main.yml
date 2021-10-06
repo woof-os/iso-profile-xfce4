@@ -36,6 +36,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build ISO
         run: |
-          docker build --rm -t woof-os/archiso-builder:latest woof-os/archiso-builder
+          docker build --rm -t woof-os/archiso-builder:latest .
           docker run --rm -v /tmp:/tmp -t -i --privileged woof-os/archiso-builder:latest
 
