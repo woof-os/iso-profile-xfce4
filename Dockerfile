@@ -10,8 +10,10 @@ FROM archlinux:latest
 #Install git and archiso
 RUN pacman -Syyu git archiso --noconfirm
 
+#Curl the file
+RUN curl -lO https://raw.githubusercontent.com/woof-os/archiso-builder/master/files/buildscript.sh
 #Copy the build script and allow him to be executed
-COPY files/buildscript.sh root/
+COPY buildscript.sh root/
 
 #Place the terminal in the home folder
 RUN ["chmod", "+x", "root/buildscript.sh"]
