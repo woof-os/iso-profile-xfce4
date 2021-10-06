@@ -11,10 +11,10 @@ FROM archlinux:latest
 RUN pacman -Syyu git archiso --noconfirm
 
 #Copy the build script and allow him to be executed
-COPY buildscript.sh root/
+COPY build.sh root/
 
 #Place the terminal in the home folder
-RUN ["chmod", "+x", "root/buildscript.sh"]
+RUN ["chmod", "+x", "root/build.sh"]
 
-ENTRYPOINT ["./root/buildscript.sh"]
+ENTRYPOINT ["./root/build.sh"]
 
