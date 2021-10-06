@@ -12,7 +12,7 @@ RUN pacman -Syyu git archiso --noconfirm
 
 #Copy the build script and allow him to be executed
 COPY build.sh root/
-COPY archlive root/
+RUN cp -r archlive root/archlive
 
 #Place the terminal in the home folder
 RUN ["chmod", "+x", "root/build.sh"]

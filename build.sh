@@ -1,3 +1,3 @@
 #!/bin/bash
 pacman -Syyu archiso
-mkarchiso -v ./archlive
+mkarchiso -v archlive
