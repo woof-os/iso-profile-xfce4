@@ -8,7 +8,7 @@ FROM archlinux:latest
 #MAINTAINER nlhomme (https://github.com/nlhomme/archiso-builder)
 
 #Install git and archiso
-RUN pacman -S git archiso --noconfirm
+RUN pacman -Syyu git archiso --noconfirm
 
 #Copy the build script and allow him to be executed
 COPY files/buildscript.sh root/
