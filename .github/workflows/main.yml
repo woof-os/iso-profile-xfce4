@@ -37,5 +37,5 @@ jobs:
       - name: Build ISO
         run: |
           docker build --rm -t woof-os/archiso-builder:latest .
-          docker run --rm -v /tmp:/tmp -t -i --privileged woof-os/archiso-builder:latest
+          docker run --rm -v /tmp:/tmp --privileged woof-os/archiso-builder:latest
 
