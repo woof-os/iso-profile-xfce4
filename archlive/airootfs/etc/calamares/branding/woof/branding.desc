@@ -198,7 +198,7 @@ style:
 # To configure a QML file, list a single filename:
 #   slideshow:               "show.qml"
 # To configure images, like the filenames (here, as an inline list):
-slideshow: [ "woof.png"]
+slideshow: [ "banner.png"]
 # slideshow:               "show.qml"
 
 # There are two available APIs for a QML slideshow:
