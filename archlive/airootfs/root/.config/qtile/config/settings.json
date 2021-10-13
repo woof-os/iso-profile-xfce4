@@ -1,6 +1,6 @@
 {
   "looks": {
-    "wallpaper": "~/.config/qtile/wallpaper.jpg",
+    "wallpaper": "/etc/woofos/wallpaper.jpg",
     "caret_font_size": 49,
     "caret_font": "Font Awesome 5 Free Solid",
     "border-margin": 3,
