@@ -143,7 +143,6 @@ xorg
 xwallpaper
 xorg-xinit
 flameshot
-firefox
 plank
 git
 fakeroot
@@ -158,4 +157,3 @@ pcmanfm
 qt5ct
 pulseaudio
 xdotool
-
