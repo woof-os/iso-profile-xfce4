@@ -131,6 +131,7 @@ woof-scripts
 woof-vim-config
 woof-fetch-walls
 woof-plank-themes
+woof-qt5-config
 picom
 woofetch
 lightdm

@@ -54,6 +54,10 @@ keys = [
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    Key([mod], "i", lazy.layout.grow()),
+    Key([mod], "m", lazy.layout.shrink()),
+    Key([mod], "n", lazy.layout.normalize()),
+    Key([mod], "o", lazy.layout.maximize()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -113,9 +117,9 @@ for i in groups:
     )
 
 group_names = [
-    ("code", {"layout": "monadtall"}),
+    ("code", {"layout": "bsp"}),
     ("wifi", {"layout": "max"}),
-    ("box", {"layout": "monadtall"}),
+    ("box", {"layout": "zoomy"}),
     ("book", {"layout": "max"}),
     ("comment", {"layout": "max"}),
     ("gamepad", {"layout": "max"}),
@@ -143,6 +147,8 @@ layouts = [
     layout.MonadTall(**layout_theme),
     layout.Floating(**layout_theme),
     layout.Max(**layout_theme),
+    layout.Bsp(**layout_theme),
+    layout.Zoomy(**layout_theme),
 ]
 
 widget_defaults = dict(
@@ -212,8 +218,8 @@ widgets_list: list = [
     widget.Sep(padding=6, linewidth=0, background=colors["seperator"]),
     widget.Spacer(),
     ### Systray ###
-    # widget.Systray(background=colors["systray"], padding=10),
-    # widget.Sep(linewidth=0, padding=6, background=colors["systray"]),
+    widget.Systray(background=colors["systray"], padding=10),
+    widget.Sep(linewidth=0, padding=6, background=colors["systray"]),
 
     ### CMUS ###
     # widget.Sep(padding=6, linewidth=0, background=colors["seperator"]),
@@ -382,25 +388,27 @@ floating_layout = layout.Floating(
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser("~")
-    subprocess.call(["sh", home + "/.config/qtile/autostart.sh"])
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "start"])
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.call([home + "/.config/qtile/autostart.sh"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "show"])
 
 @hook.subscribe.startup
 def runner():
     home = os.path.expanduser("~")
     subprocess.Popen(["xsetroot", "-cursor_name", "left_ptr"])
     subprocess.Popen(["xwallpaper", "--zoom", wallpaper])
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "start"])
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.Popen([home + "/.config/qtile/conky.sh"])
+    subprocess.Popen(["killall", "plank"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "show"])
 
 floating_types = ["notification", "toolbar", "splash", "dialog", "dock"]
 
 @hook.subscribe.client_new
 def bring_plank_to_front(*_):
     home = os.path.expanduser("~")
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "hide"])
-    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen([home + "/.config/qtile/plank-runner.sh", "show"])
 
 @lazy.function
 def float_to_front(qtile):
