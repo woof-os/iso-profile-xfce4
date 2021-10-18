@@ -388,27 +388,27 @@ floating_layout = layout.Floating(
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser("~")
-    subprocess.call(["sh" + home + "/.config/qtile/autostart.sh"])
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "start"])
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.call(["sh", home + "/.config/qtile/autostart.sh"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
 
 @hook.subscribe.startup
 def runner():
     home = os.path.expanduser("~")
     subprocess.Popen(["xsetroot", "-cursor_name", "left_ptr"])
     subprocess.Popen(["xwallpaper", "--zoom", wallpaper])
-    subprocess.Popen(["sh" + home + "/.config/qtile/conky.sh"])
+    subprocess.Popen(["sh", home + "/.config/qtile/conky.sh"])
     subprocess.Popen(["killall", "plank"])
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "start"])
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
 
 floating_types = ["notification", "toolbar", "splash", "dialog", "dock"]
 
 @hook.subscribe.client_new
 def bring_plank_to_front(*_):
     home = os.path.expanduser("~")
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "start"])
-    subprocess.Popen(["sh" + home + "/.config/qtile/plank-runner.sh", "show"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "start"])
+    subprocess.Popen(["sh", home + "/.config/qtile/plank-runner.sh", "show"])
 
 @lazy.function
 def float_to_front(qtile):
