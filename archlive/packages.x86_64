@@ -133,7 +133,7 @@ woof-fetch-walls
 woof-plank-themes
 woof-qt5-config
 woof-wallpapers
-picom
+woof-picom-config
 woofetch
 lightdm
 lightdm-gtk-greeter
