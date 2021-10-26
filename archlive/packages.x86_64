@@ -127,7 +127,6 @@ lxappearance
 woof-rofi-config
 woof-dunst-config
 woof-kitty-config
-woof-scripts
 woof-vim-config
 woof-fetch-walls
 woof-plank-themes
@@ -151,6 +150,7 @@ sudo
 wget
 htop
 noto-fonts
+noto-fonts-cjk
 ttf-nerd-fonts-symbols
 cantarell-fonts
 ttf-fira-code
