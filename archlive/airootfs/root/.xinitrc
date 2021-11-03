@@ -1,1 +1,1 @@
-qtile start
+exec startxfce4
