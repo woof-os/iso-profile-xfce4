@@ -25,4 +25,5 @@ Now, you can test the iso on your virtual machine.
 # TODO
 - Add display manager service file to installed system
 - Remove dock shadow in xfwm4
+- Change wallpaper
 
