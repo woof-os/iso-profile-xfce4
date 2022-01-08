@@ -1,5 +1,6 @@
 alsa-utils
 amd-ucode
+pamac-aur
 arch-install-scripts
 b43-fwcutter
 base
@@ -156,3 +157,4 @@ xfce4-goodies
 networkmanager
 network-manager-applet
 woof-icon-config
+thunar-archive-plugin
