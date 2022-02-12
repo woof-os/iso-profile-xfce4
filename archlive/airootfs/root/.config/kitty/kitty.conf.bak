@@ -6,10 +6,10 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family      Fira Code
-bold_font        Fira Code Bold
-italic_font      Fira Code Italic
-bold_italic_font Fira Code Bold Italic
+font_family      Jetbrains Mono
+bold_font        Jetbrains Mono Bold
+italic_font      Jetbrains Mono Italic
+bold_italic_font Jetbrains Mono Bold Italic
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -23,7 +23,7 @@ bold_italic_font Fira Code Bold Italic
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 12.0
+font_size 10.0
 
 #: Font size (in pts)
 
@@ -100,9 +100,9 @@ disable_ligatures never
 
 #: Choose exactly which OpenType features to enable or disable. This
 #: is useful as some fonts might have features worthwhile in a
-#: terminal. For example, Fira Code Retina includes a discretionary
+#: terminal. For example, Jetbrains Mono Retina includes a discretionary
 #: feature, zero, which in that font changes the appearance of the
-#: zero (0), to make it more easily distinguishable from Ø. Fira Code
+#: zero (0), to make it more easily distinguishable from Ø. Jetbrains Mono
 #: Retina also includes other discretionary features known as
 #: Stylistic Sets which have the tags ss01 through ss20.
 
@@ -125,12 +125,12 @@ disable_ligatures never
 #: .. code-block:: sh
 
 #:     $ kitty + list-fonts --psnames | grep Fira
-#:     Fira Code
-#:     Fira Code Bold (FiraCode-Bold)
-#:     Fira Code Light (FiraCode-Light)
-#:     Fira Code Medium (FiraCode-Medium)
-#:     Fira Code Regular (FiraCode-Regular)
-#:     Fira Code Retina (FiraCode-Retina)
+#:     Jetbrains Mono
+#:     Jetbrains Mono Bold (FiraCode-Bold)
+#:     Jetbrains Mono Light (FiraCode-Light)
+#:     Jetbrains Mono Medium (FiraCode-Medium)
+#:     Jetbrains Mono Regular (FiraCode-Regular)
+#:     Jetbrains Mono Retina (FiraCode-Retina)
 
 #: The part in brackets is the PostScript name.
 
@@ -1390,24 +1390,24 @@ inactive_tab_foreground #b4b7b4
 tab_bar_background #282a2e
 
 # normal
-color0 #1d1f21
-color1 #cc6666
-color2 #b5bd68
-color3 #f0c674
-color4 #81a2be
-color5 #b294bb
-color6 #8abeb7
-color7 #c5c8c6
+color0 #282a2e
+color1 #a54242
+color2 #8c9440
+color3 #de935f
+color4 #5f819d
+color5 #85678f
+color6 #5e8d87
+color7 #707880
 
-# bright
-color8 #969896
-color9 #cc6666
+
+color8  #373b41
+color9  #cc6666
 color10 #b5bd68
 color11 #f0c674
 color12 #81a2be
 color13 #b294bb
 color14 #8abeb7
-color15 #ffffff
+color15 #c5c8c6
 
 # extended base16 colors
 color16 #de935f
@@ -1416,5 +1416,5 @@ color18 #282a2e
 color19 #373b41
 color20 #b4b7b4
 color21 #e0e0e0
- 
-background_opacity 1.0
+
+background_opacity 0.9
