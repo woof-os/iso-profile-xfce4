@@ -36,8 +36,6 @@ gptfdisk
 grml-zsh-config
 hdparm
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 irssi
 iw
 iwd
@@ -145,7 +143,7 @@ wget
 htop
 noto-fonts
 noto-fonts-cjk
-ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-2048-em
 cantarell-fonts
 ttf-fira-code
 qt5ct
